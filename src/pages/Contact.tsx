@@ -5,13 +5,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Send, Code2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
   { href: "https://github.com/punam2005", icon: Github, label: "GitHub", handle: "github.com/punam2005" },
   { href: "https://www.linkedin.com/in/punam-agrawal-257263258/", icon: Linkedin, label: "LinkedIn", handle: "linkedin.com/in/punam-agrawal-257263258" },
   { href: "mailto:agrawalpoonam099@gmail.com", icon: Mail, label: "Email", handle: "agrawalpoonam099@gmail.com" },
+  { href: "tel:+918144544216", icon: Phone, label: "Phone", handle: "+91 8144544216" },
+  { href: "https://leetcode.com/u/agrawalpoonam099/", icon: Code2, label: "LeetCode", handle: "leetcode.com/u/agrawalpoonam099" },
 ];
 
 export default function Contact() {

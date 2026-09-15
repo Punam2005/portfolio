@@ -126,8 +126,21 @@ export default function About() {
                   <span className="text-muted-foreground">/*</span> Experience <span className="text-muted-foreground">*/</span>
                 </h2>
                 <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>B.Tech CSE · CGPA 8.7</p>
-                  <p>Silicon Institute of Technology</p>
+                  <p className="text-foreground">Software Development Intern — Backend</p>
+                  <p>Technocrat Software · Sambalpur</p>
+                  <p>August 2025 — November 2025</p>
+                  <p>REST APIs, JWT authentication, MongoDB, and frontend collaboration</p>
+                </div>
+              </div>
+
+              {/* Education */}
+              <div className="opacity-0 animate-fade-in-up stagger-4">
+                <h2 className="font-mono text-sm text-primary mb-4">
+                  <span className="text-muted-foreground">/*</span> Education <span className="text-muted-foreground">*/</span>
+                </h2>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p className="text-foreground">B.Tech in Computer Science &amp; Engineering</p>
+                  <p>Silicon Institute of Technology · CGPA 8.7</p>
                   <p>October 2022 — May 2026</p>
                 </div>
               </div>

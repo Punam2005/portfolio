@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl opacity-0 animate-fade-in-up">
             {/* Code-style label */}
-            <CodeLabel className="mb-6">Computer Science &amp; Engineering Student</CodeLabel>
+            <CodeLabel className="mb-6">Backend Developer · CSE Student</CodeLabel>
 
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -51,7 +51,7 @@ export default function Home() {
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed opacity-0 animate-fade-in-up stagger-1">
-              Computer Science &amp; Engineering student at Silicon Institute of Technology with a focus on backend development, full-stack applications, and problem solving.
+              Computer Science &amp; Engineering student at Silicon Institute of Technology with backend internship experience and a focus on full-stack applications, APIs, and problem solving.
             </p>
 
             {/* CTA */}
