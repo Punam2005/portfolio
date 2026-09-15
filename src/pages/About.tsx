@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
+import profilePhoto from "@/assets/punam-linkedin.jpg.asset.json";
 
 const skills = [
   "Backend Development",
