@@ -3,24 +3,38 @@ import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 
 const skills = [
-  "Systems Architecture",
-  "Frontend Engineering",
-  "API Design",
-  "Performance Optimization",
-  "Technical Leadership",
-  "Product Development",
+  "Backend Development",
+  "Full-Stack Development",
+  "RESTful API Design",
+  "Data Structures & Algorithms",
+  "Database Design",
+  "Agile Collaboration",
 ];
 
 const stack = [
+  "Java",
+  "Python",
+  "JavaScript",
+  "C",
+  "Spring Boot",
   "TypeScript",
   "React",
+  "React Native",
   "Node.js",
+  "Express.js",
   "PostgreSQL",
-  "Next.js",
-  "GraphQL",
+  "MongoDB",
+  "MySQL",
   "Redis",
-  "Docker",
-  "AWS",
+  "Socket.io",
+  "JWT",
+];
+
+const certifications = [
+  "Data Structures & Algorithms in Java — Physics Wallah",
+  "Programming in Java — NPTEL",
+  "SAP ABAP Certification",
+  "SAP IBP Certification",
 ];
 
 export default function About() {
@@ -38,39 +52,22 @@ export default function About() {
           <div className="grid gap-16 lg:grid-cols-3">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-6">
-              {/* Developer Photo */}
-              <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-primary/30 transition-all duration-300 hover:border-primary">
-                  <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Diego Ramirez - Developer"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
               <div className="opacity-0 animate-fade-in-up stagger-1">
                 <p className="text-lg text-foreground leading-relaxed">
-                  I'm <span className="text-primary font-medium">Diego Ramirez</span>, a developer based in Mexico focused on building systems that scale, perform, and last. 
-                  I work at the intersection of engineering, product, and design, turning 
-                  complex problems into reliable digital solutions.
+                  I'm <span className="text-primary font-medium">Punam Agrawal</span>, a Computer Science &amp; Engineering student at Silicon Institute of Technology. I enjoy building reliable backend services and full-stack applications that solve practical problems.
                 </p>
               </div>
 
               <div className="opacity-0 animate-fade-in-up stagger-2">
                 <p className="text-muted-foreground leading-relaxed">
                   With years of experience in the industry, I've worked on everything from 
-                  early-stage startups to enterprise-scale systems. My approach combines 
-                  technical depth with product thinking — always focused on delivering 
-                  real impact, not just shipping code.
+                  My experience includes developing RESTful APIs, implementing JWT authentication, designing MongoDB schemas, and collaborating with frontend teams to deliver useful features for real users.
                 </p>
               </div>
 
               <div className="opacity-0 animate-fade-in-up stagger-3">
                 <p className="text-muted-foreground leading-relaxed">
-                  I believe in writing code that's maintainable, documented, and built to 
-                  evolve. Every system I design considers not just the current requirements, 
-                  but how it will need to change and scale over time.
+                  I care about clear code, thoughtful database design, and continuous learning across backend engineering, frontend development, and core computer science.
                 </p>
               </div>
 
@@ -80,16 +77,16 @@ export default function About() {
 
               <div className="space-y-4 font-mono text-sm opacity-0 animate-fade-in-up stagger-4">
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Build for reliability, not just speed
+                  <span className="text-primary">{"//"}</span> Learn by building practical solutions
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Measure impact, not just output
+                  <span className="text-primary">{"//"}</span> Keep systems clear and maintainable
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Simplify complexity, don't hide it
+                  <span className="text-primary">{"//"}</span> Collaborate across the full stack
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Document decisions, not just code
+                  <span className="text-primary">{"//"}</span> Keep improving through fundamentals
                 </p>
               </div>
             </div>
@@ -129,9 +126,21 @@ export default function About() {
                   <span className="text-muted-foreground">/*</span> Experience <span className="text-muted-foreground">*/</span>
                 </h2>
                 <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>8+ years in software development</p>
-                  <p>Startups to enterprise scale</p>
-                  <p>Remote-first since 2018</p>
+                  <p>B.Tech CSE · CGPA 8.7</p>
+                  <p>Silicon Institute of Technology</p>
+                  <p>October 2022 — May 2026</p>
+                </div>
+              </div>
+
+              {/* Certifications */}
+              <div className="opacity-0 animate-fade-in-up stagger-4">
+                <h2 className="font-mono text-sm text-primary mb-4">
+                  <span className="text-muted-foreground">/*</span> Certifications <span className="text-muted-foreground">*/</span>
+                </h2>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  {certifications.map((certification) => (
+                    <p key={certification}>{certification}</p>
+                  ))}
                 </div>
               </div>
             </div>

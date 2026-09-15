@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projectsData: Record<string, {
@@ -14,80 +14,61 @@ const projectsData: Record<string, {
   challenges: string[];
   features: string[];
 }> = {
-  "scalable-fintech-platform": {
-    name: "Scalable Fintech Platform",
-    description: "Development of a scalable financial platform designed to handle millions of transactions with real-time processing capabilities.",
-    fullDescription: "Built a comprehensive financial platform from the ground up, focusing on security, reliability, and performance at scale. The system processes millions of transactions daily with sub-second latency, implementing sophisticated fraud detection algorithms and real-time analytics dashboards for stakeholders.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Redis", "AWS"],
-    impact: "35% latency reduction, support for millions of users",
+  manageit: {
+    name: "ManageIT",
+    description: "Resource management web app for resources, support tickets, and activity logs.",
+    fullDescription: "Built a full-stack resource management web app for Argusoft India Ltd. using Java Spring Boot APIs and an Angular frontend. The application brings resource details, support tickets, and activity logs into one workflow.",
+    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL"],
+    impact: "Integrated frontend and backend modules for seamless data exchange",
     challenges: [
-      "Handling high-volume concurrent transactions without data loss",
-      "Implementing real-time fraud detection with minimal false positives",
-      "Ensuring PCI-DSS compliance across the entire stack",
-      "Scaling horizontally while maintaining data consistency"
+      "Designing a PostgreSQL schema for resources, tickets, and system logs",
+      "Connecting Angular workflows with Spring Boot APIs",
+      "Supporting development, testing, debugging, and Git-based integration",
+      "Collaborating effectively within an Agile team"
     ],
     features: [
-      "Real-time transaction processing engine",
-      "Multi-factor authentication system",
-      "Automated fraud detection with ML models",
-      "Comprehensive audit logging and reporting"
+      "Resource detail management",
+      "Support ticket workflows",
+      "Activity and system log tracking",
+      "PostgreSQL-backed data exchange"
     ]
   },
-  "internal-design-system": {
-    name: "Internal Design System",
-    description: "Creation of a comprehensive design system that enables multiple development teams to build consistent interfaces.",
-    fullDescription: "Developed and maintained a company-wide design system used by 50+ developers across multiple product teams. The system includes a complete component library, design tokens, documentation portal, and automated visual regression testing to ensure consistency across all products.",
-    stack: ["React", "Storybook", "CSS-in-JS", "TypeScript", "Figma API"],
-    impact: "40% increase in team productivity, improved visual consistency",
+  quickurl: {
+    name: "QuickURL",
+    description: "URL shortener with custom aliases, expiry settings, and usage analytics.",
+    fullDescription: "Designed and built a URL shortening service with custom aliases and expiry controls. The project also includes a React analytics dashboard that surfaces click trends, geographic distribution, and device breakdown.",
+    stack: ["Node.js", "Express.js", "React", "MongoDB"],
+    impact: "60% redirect latency reduction under load",
     challenges: [
-      "Aligning design and engineering teams on component APIs",
-      "Maintaining backward compatibility during updates",
-      "Creating accessible components that meet WCAG 2.1 AA standards",
-      "Documenting usage patterns for diverse use cases"
+      "Creating predictable short links with custom aliases",
+      "Handling expiry rules without disrupting valid redirects",
+      "Presenting analytics clearly across multiple dimensions",
+      "Reducing redirect latency under load"
     ],
     features: [
-      "60+ production-ready components",
-      "Automated visual regression testing",
-      "Figma-to-code synchronization",
-      "Interactive documentation with live examples"
+      "Custom URL aliases",
+      "Link expiry controls",
+      "Click trend analytics",
+      "Geographic and device breakdowns"
     ]
   },
-  "real-time-analytics-dashboard": {
-    name: "Real-Time Analytics Dashboard",
-    description: "A real-time dashboard built for instant decision-making with live data visualization.",
-    fullDescription: "Created a high-performance analytics dashboard that processes and visualizes millions of data points in real-time. The system features customizable widgets, alerting capabilities, and seamless integration with multiple data sources including databases, APIs, and streaming platforms.",
-    stack: ["Next.js", "WebSockets", "D3.js", "Redis", "ClickHouse"],
-    impact: "Instant insights for product and business teams",
+  "smart-expense-tracker": {
+    name: "Smart Expense Tracker",
+    description: "Cross-platform app for real-time income and expense tracking.",
+    fullDescription: "Built a cross-platform expense tracker with React Native, Node.js, Express, and MongoDB. The app supports real-time income and expense tracking, category-wise summaries, cloud data sync, and interactive monthly insight charts.",
+    stack: ["React Native", "Node.js", "Express.js", "MongoDB", "JWT"],
+    impact: "40% improvement in tracking efficiency",
     challenges: [
-      "Rendering large datasets without performance degradation",
-      "Implementing efficient data aggregation pipelines",
-      "Creating intuitive drag-and-drop dashboard customization",
-      "Handling network interruptions gracefully"
+      "Keeping income and expense data synchronized across platforms",
+      "Securing the REST API with JWT authentication",
+      "Turning transaction data into useful category summaries",
+      "Designing monthly charts that support quick decisions"
     ],
     features: [
-      "Real-time data streaming with WebSocket connections",
-      "Customizable dashboard layouts and widgets",
-      "Advanced filtering and drill-down capabilities",
-      "Automated alerting and anomaly detection"
-    ]
-  },
-  "e-commerce-microservices-architecture": {
-    name: "E-Commerce Microservices Architecture",
-    description: "Complete microservices ecosystem for a high-traffic e-commerce platform.",
-    fullDescription: "Architected and implemented a distributed microservices system handling peak traffic of 100K+ requests per minute. The platform features event-driven communication, automated scaling, circuit breakers, and comprehensive observability with distributed tracing.",
-    stack: ["Go", "Kubernetes", "gRPC", "MongoDB", "Kafka", "Prometheus"],
-    impact: "99.99% uptime, 10x throughput improvement",
-    challenges: [
-      "Designing resilient inter-service communication",
-      "Implementing distributed transactions across services",
-      "Managing data consistency in eventual consistency model",
-      "Orchestrating deployments across 20+ microservices"
-    ],
-    features: [
-      "Event-driven architecture with Kafka",
-      "Kubernetes-native auto-scaling",
-      "Distributed tracing with Jaeger",
-      "Comprehensive health monitoring and alerting"
+      "Real-time income and expense entry",
+      "Category-wise summaries",
+      "JWT-secured REST API",
+      "Cloud sync and monthly insight charts"
     ]
   }
 };
@@ -186,17 +167,6 @@ export default function ProjectDetail() {
             </ul>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex flex-wrap gap-4 pt-8 border-t border-border opacity-0 animate-fade-in-up stagger-4">
-            <Button variant="outline" className="font-mono" disabled>
-              <Github className="mr-2 h-4 w-4" />
-              View Code
-            </Button>
-            <Button variant="outline" className="font-mono" disabled>
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Live Demo
-            </Button>
-          </div>
         </div>
       </section>
     </Layout>

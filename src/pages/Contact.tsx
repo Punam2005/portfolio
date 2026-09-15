@@ -9,9 +9,9 @@ import { Github, Linkedin, Mail, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub", handle: "@developer" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn", handle: "/in/developer" },
-  { href: "mailto:hello@developer.dev", icon: Mail, label: "Email", handle: "hello@developer.dev" },
+  { href: "https://github.com/punam2005", icon: Github, label: "GitHub", handle: "github.com/punam2005" },
+  { href: "https://www.linkedin.com/in/punam-agrawal-257263258/", icon: Linkedin, label: "LinkedIn", handle: "linkedin.com/in/punam-agrawal-257263258" },
+  { href: "mailto:agrawalpoonam099@gmail.com", icon: Mail, label: "Email", handle: "agrawalpoonam099@gmail.com" },
 ];
 
 export default function Contact() {
@@ -44,8 +44,7 @@ export default function Contact() {
               Contact
             </h1>
             <p className="text-muted-foreground leading-relaxed">
-              Have a project in mind or want to discuss opportunities? 
-              I'm always open to interesting conversations and collaborations.
+              Have a project in mind or want to discuss an opportunity? I’m open to conversations about backend, full-stack, and software development work.
             </p>
           </div>
 
@@ -143,7 +142,7 @@ export default function Contact() {
                   <span className="text-primary">/*</span> Availability <span className="text-primary">*/</span>
                 </p>
                 <p className="text-sm text-foreground">
-                  Currently open to new opportunities and freelance projects.
+                  Currently open to internships, entry-level software roles, and collaborative projects.
                 </p>
               </div>
             </div>
