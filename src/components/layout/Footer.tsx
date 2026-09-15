@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:hello@developer.dev", icon: Mail, label: "Email" },
+  { href: "https://github.com/punam2005", icon: Github, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/punam-agrawal-257263258/", icon: Linkedin, label: "LinkedIn" },
+  { href: "mailto:agrawalpoonam099@gmail.com", icon: Mail, label: "Email" },
 ];
 
 export function Footer() {
@@ -16,7 +16,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* Copyright */}
           <p className="font-mono text-sm text-muted-foreground">
-            <span className="text-primary">//</span> © {currentYear} Diego Ramirez
+            <span className="text-primary">//</span> © {currentYear} Punam Agrawal
           </p>
 
           {/* Footer Links */}

@@ -9,32 +9,25 @@ import { ArrowRight } from "lucide-react";
 
 const featuredProjects = [
   {
-    name: "Scalable Fintech Platform",
-    slug: "scalable-fintech-platform",
-    description: "Development of a scalable financial platform handling millions of transactions with real-time processing and robust security measures.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    impact: "35% latency reduction, millions of users supported",
+    name: "ManageIT",
+    slug: "manageit",
+    description: "Full-stack resource management web app for resources, support tickets, and activity logs.",
+    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL"],
+    impact: "Integrated resource, ticket, and activity workflows",
   },
   {
-    name: "Internal Design System",
-    slug: "internal-design-system",
-    description: "Creation of a robust design system enabling multiple teams to build consistent, accessible interfaces at scale.",
-    stack: ["React", "Storybook", "CSS-in-JS"],
-    impact: "40% increase in team productivity",
+    name: "QuickURL",
+    slug: "quickurl",
+    description: "URL shortening service with custom aliases, expiry controls, and an analytics dashboard.",
+    stack: ["Node.js", "Express.js", "React", "MongoDB"],
+    impact: "60% redirect latency reduction under load",
   },
   {
-    name: "Real-Time Analytics Dashboard",
-    slug: "real-time-analytics-dashboard",
-    description: "Real-time dashboard for instant decision-making with live data visualization and customizable metrics.",
-    stack: ["Next.js", "WebSockets", "D3.js"],
-    impact: "Instant insights for product and business teams",
-  },
-  {
-    name: "E-Commerce Microservices",
-    slug: "e-commerce-microservices-architecture",
-    description: "Complete microservices ecosystem for high-traffic e-commerce platform with event-driven architecture and automated scaling.",
-    stack: ["Go", "Kubernetes", "gRPC", "MongoDB"],
-    impact: "99.99% uptime, 10x throughput improvement",
+    name: "Smart Expense Tracker",
+    slug: "smart-expense-tracker",
+    description: "Cross-platform app for real-time income and expense tracking with monthly insight charts.",
+    stack: ["React Native", "Node.js", "Express.js", "MongoDB"],
+    impact: "40% improvement in tracking efficiency",
   },
 ];
 
@@ -46,28 +39,26 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl opacity-0 animate-fade-in-up">
             {/* Code-style label */}
-            <CodeLabel className="mb-6">Senior Developer</CodeLabel>
+            <CodeLabel className="mb-6">Backend Developer · CSE Student</CodeLabel>
 
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Hi, I'm Diego Ramirez.
+              Hi, I'm Punam Agrawal.
               <br />
-              <span className="text-muted-foreground">I build reliable digital systems</span>
+              <span className="text-muted-foreground">I build practical software solutions</span>
               <TypingCursor />
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed opacity-0 animate-fade-in-up stagger-1">
-              A Mexico-based developer focused on building products that scale, perform, and deliver real impact. 
-              Working at the intersection of engineering, product, and design to turn 
-              complex problems into elegant solutions.
+              Computer Science &amp; Engineering student at Silicon Institute of Technology with backend internship experience and a focus on full-stack applications, APIs, and problem solving.
             </p>
 
             {/* CTA */}
             <div className="opacity-0 animate-fade-in-up stagger-2">
               <Button asChild size="lg" className="font-mono transition-transform hover:scale-105">
                 <Link to="/work">
-                  View Work
+                  View Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

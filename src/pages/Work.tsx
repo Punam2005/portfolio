@@ -4,32 +4,25 @@ import { ProjectCard } from "@/components/ui/ProjectCard";
 
 const projects = [
   {
-    name: "Scalable Fintech Platform",
-    slug: "scalable-fintech-platform",
-    description: "Development of a scalable financial platform designed to handle millions of transactions with real-time processing capabilities. Built with a focus on security, reliability, and performance at scale.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    impact: "35% latency reduction, support for millions of users",
+    name: "ManageIT",
+    slug: "manageit",
+    description: "Full-stack resource management web app built for managing resources, support tickets, and activity logs.",
+    stack: ["Java", "Spring Boot", "Angular", "PostgreSQL"],
+    impact: "Integrated frontend and backend modules for seamless data exchange",
   },
   {
-    name: "Internal Design System",
-    slug: "internal-design-system",
-    description: "Creation of a comprehensive design system that enables multiple development teams to build consistent, accessible, and visually cohesive interfaces. Includes documentation, component library, and design tokens.",
-    stack: ["React", "Storybook", "CSS-in-JS", "TypeScript"],
-    impact: "40% increase in team productivity, improved visual consistency",
+    name: "QuickURL",
+    slug: "quickurl",
+    description: "URL shortening service with custom aliases, expiry settings, and a React analytics dashboard.",
+    stack: ["Node.js", "Express.js", "React", "MongoDB"],
+    impact: "60% redirect latency reduction under load",
   },
   {
-    name: "Real-Time Analytics Dashboard",
-    slug: "real-time-analytics-dashboard",
-    description: "A real-time dashboard built for instant decision-making. Features live data visualization, customizable metrics, and seamless integration with multiple data sources for product and business intelligence.",
-    stack: ["Next.js", "WebSockets", "D3.js", "Redis"],
-    impact: "Instant insights for product and business teams",
-  },
-  {
-    name: "E-Commerce Microservices Architecture",
-    slug: "e-commerce-microservices-architecture",
-    description: "Complete microservices ecosystem for a high-traffic e-commerce platform. Features event-driven architecture, automated scaling, and distributed data management for maximum reliability and performance.",
-    stack: ["Go", "Kubernetes", "gRPC", "MongoDB"],
-    impact: "99.99% uptime, 10x throughput improvement",
+    name: "Smart Expense Tracker",
+    slug: "smart-expense-tracker",
+    description: "Cross-platform app for real-time income and expense tracking with category summaries and cloud sync.",
+    stack: ["React Native", "Node.js", "Express.js", "MongoDB", "JWT"],
+    impact: "40% improvement in tracking efficiency",
   },
 ];
 
@@ -44,9 +37,7 @@ export default function Work() {
               Work
             </h1>
             <p className="text-muted-foreground leading-relaxed">
-              A selection of projects showcasing systems engineering, product development, 
-              and technical problem-solving. Each project represents real challenges solved 
-              with measurable impact.
+              A selection of full-stack and backend projects built with JavaScript, Java, React, Spring Boot, and modern data technologies.
             </p>
           </div>
 
