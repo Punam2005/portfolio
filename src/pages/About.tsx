@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
+import profilePhoto from "@/assets/punam-linkedin.jpg.asset.json";
 
 const skills = [
   "Backend Development",
@@ -52,10 +53,19 @@ export default function About() {
           <div className="grid gap-16 lg:grid-cols-3">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="opacity-0 animate-fade-in-up stagger-1">
-                <p className="text-lg text-foreground leading-relaxed">
-                  I'm <span className="text-primary font-medium">Punam Agrawal</span>, a Computer Science &amp; Engineering student at Silicon Institute of Technology. I enjoy building reliable backend services and full-stack applications that solve practical problems.
-                </p>
+              <div className="flex flex-col md:flex-row gap-6 items-start opacity-0 animate-fade-in-up stagger-1">
+                <div className="shrink-0">
+                  <img
+                    src={profilePhoto.url}
+                    alt="Punam Agrawal"
+                    className="w-40 h-48 md:w-48 md:h-56 object-cover rounded-2xl border border-border shadow-sm"
+                  />
+                </div>
+                <div className="space-y-6">
+                  <p className="text-lg text-foreground leading-relaxed">
+                    I'm <span className="text-primary font-medium">Punam Agrawal</span>, a Computer Science &amp; Engineering student at Silicon Institute of Technology. I enjoy building reliable backend services and full-stack applications that solve practical problems.
+                  </p>
+                </div>
               </div>
 
               <div className="opacity-0 animate-fade-in-up stagger-2">
