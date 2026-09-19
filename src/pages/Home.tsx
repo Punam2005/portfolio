@@ -45,13 +45,16 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Hi, I'm Punam Agrawal.
               <br />
-              <span className="text-muted-foreground">I build practical software solutions</span>
+              <span className="text-muted-foreground">I build, break & improve software</span>
               <TypingCursor />
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed opacity-0 animate-fade-in-up stagger-1">
               Computer Science &amp; Engineering student at Silicon Institute of Technology with backend internship experience and a focus on full-stack applications, APIs, and problem solving.
+            </p>
+            <p className="text-base text-foreground mb-8 max-w-xl leading-relaxed opacity-0 animate-fade-in-up stagger-1">
+              Currently exploring: Backend development, APIs, system design &amp; SAP ABAP.
             </p>
 
             {/* CTA */}

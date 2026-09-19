@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
-import profilePhoto from "@/assets/punam-linkedin.jpg.asset.json";
+import profilePhoto from "@/assets/linkedin_photo.jpeg";
 
 const skills = [
   "Backend Development",
@@ -20,7 +20,6 @@ const stack = [
   "Spring Boot",
   "TypeScript",
   "React",
-  "React Native",
   "Node.js",
   "Express.js",
   "PostgreSQL",
@@ -56,9 +55,13 @@ export default function About() {
               <div className="flex flex-col md:flex-row gap-6 items-start opacity-0 animate-fade-in-up stagger-1">
                 <div className="shrink-0">
                   <img
-                    src={profilePhoto.url}
+                    src={profilePhoto}
                     alt="Punam Agrawal"
                     className="w-40 h-48 md:w-48 md:h-56 object-cover rounded-2xl border border-border shadow-sm"
+                    onError={(event) => {
+                      event.currentTarget.onerror = null;
+                      event.currentTarget.src = "/placeholder.svg";
+                    }}
                   />
                 </div>
                 <div className="space-y-6">
@@ -70,8 +73,7 @@ export default function About() {
 
               <div className="opacity-0 animate-fade-in-up stagger-2">
                 <p className="text-muted-foreground leading-relaxed">
-                  With years of experience in the industry, I've worked on everything from 
-                  My experience includes developing RESTful APIs, implementing JWT authentication, designing MongoDB schemas, and collaborating with frontend teams to deliver useful features for real users.
+                  My experience comes from building real-world projects and gaining hands-on exposure to backend and full-stack development. I have worked with Node.js, Express.js, MongoDB, React, RESTful APIs, and JWT authentication, while focusing on creating scalable features and intuitive user experiences. I’m passionate about learning new technologies, solving practical problems, and continuously growing as a software developer.
                 </p>
               </div>
 
