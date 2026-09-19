@@ -4,6 +4,10 @@ Personal developer portfolio for Punam Agrawal, a Computer Science and Engineeri
 
 The site presents selected projects, technical skills, experience, education, certifications, and contact links in a responsive interface inspired by developer tools and code editors.
 
+## Live Demo
+
+[View the live portfolio](https://portfolio-r7qx.onrender.com)
+
 ## Features
 
 - Responsive portfolio layout for desktop and mobile screens
