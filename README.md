@@ -1,194 +1,112 @@
-# Remix of Template 03.01
+# Punam Agrawal Portfolio
 
-🔧 PROMPT PARA O LOVABLE — DEVELOPER PORTFOLIO
+Personal developer portfolio for Punam Agrawal, a Computer Science and Engineering student focused on backend development, APIs, system design, and SAP ABAP.
 
-Crie um website de portfólio para um desenvolvedor sênior, com estética técnica, precisa e orientada a sistemas.
-O site deve comunicar engenharia de alto nível, clareza estrutural e impacto real, evitando qualquer visual genérico ou “criativo demais”.
+The site presents selected projects, technical skills, experience, education, certifications, and contact links in a responsive interface inspired by developer tools and code editors.
 
-🎯 POSICIONAMENTO
+## Features
 
-Desenvolvedor experiente
+- Responsive portfolio layout for desktop and mobile screens
+- Home page with introduction, current areas of exploration, and featured projects
+- Work page with project summaries, technology stacks, and measurable impact
+- Project detail pages for individual case studies
+- About page with profile photo, skills, stack, experience, education, and certifications
+- Contact page with social and communication links
+- Accessible responsive navigation with a mobile menu
+- Reusable UI components built with Radix UI and Tailwind CSS
 
-Forte em sistemas, produtos digitais e arquitetura
+## Featured Projects
 
-Mindset de impacto, performance e confiabilidade
+### ManageIT
 
-Público-alvo: startups, scale-ups e empresas de tecnologia
+Full-stack resource management application for resources, support tickets, and activity logs.
 
-🎨 IDENTIDADE VISUAL
-Estilo
+**Stack:** Java, Spring Boot, Angular, PostgreSQL
 
-Dark, minimalista, técnico
+### QuickURL
 
-Visual inspirado em terminais, dashboards e sistemas
+URL shortening service with custom aliases, expiry controls, and an analytics dashboard.
 
-Grid rígido, modular, bem alinhado
+**Stack:** Node.js, Express.js, React, MongoDB
 
-Cores
+### Smart Expense Tracker
 
-Fundo: preto profundo / cinza grafite
+Cross-platform application for real-time income and expense tracking with monthly insight charts.
 
-Texto principal: branco técnico
+**Stack:** React Native, Node.js, Express.js, MongoDB
 
-Cor de destaque (apenas 1): verde neon OU azul elétrico
+## Technology
 
-Nada de gradientes chamativos ou cores extras
+- React 18 and TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Radix UI primitives
+- Lucide React icons
+- TanStack React Query
+- ESLint
 
-Tipografia
+## Getting Started
 
-Headings: Inter ou Space Grotesk
+### Prerequisites
 
-Corpo e detalhes técnicos: JetBrains Mono ou IBM Plex Mono
+- Node.js 18 or newer
+- npm
 
-Hierarquia muito clara e objetiva
+### Installation
 
-🧩 ELEMENTO VISUAL ÚNICO (OBRIGATÓRIO)
+Clone the repository and install the dependencies:
 
-UI inspirada em código:
+```bash
+git clone https://github.com/Punam2005/portfolio.git
+cd portfolio
+npm install
+```
 
-divisórias como comentários //
+### Development
 
-labels como /* Featured */
+Start the local development server:
 
-pequenos detalhes que remetem a syntax
-
-Cursor piscando ou efeito de typing sutil no hero
-
-🏠 HOME (implicitamente criada)
-Hero
-
-Headline curta, forte e técnica
-Exemplo:
-“I design and build reliable digital systems.”
-
-Subheadline explicando foco em produtos, arquitetura e impacto
-
-CTA simples: “View Work”
-
-Featured Projects
-
-Mostrar 3 projetos
-
-Cards técnicos com:
-
-Nome do projeto
-
-Descrição curta
-
-Tech stack
-
-Impacto mensurável
-
-📂 TELA: WORK
-Estrutura
-
-Lista de 3 projetos (criar conteúdos fictícios realistas)
-
-Projeto 1
-
-Nome: Scalable Fintech Platform
-
-Stack: React, TypeScript, Node.js, PostgreSQL
-
-Descrição: Desenvolvimento de uma plataforma financeira escalável
-
-Impacto: Redução de latência em 35%, suporte a milhões de usuários
-
-Projeto 2
-
-Nome: Internal Design System
-
-Stack: React, Storybook, CSS-in-JS
-
-Descrição: Criação de um design system robusto para múltiplos times
-
-Impacto: Aumento de produtividade e consistência visual
-
-Projeto 3
-
-Nome: Real-Time Analytics Dashboard
-
-Stack: Next.js, WebSockets, D3.js
-
-Descrição: Dashboard em tempo real para tomada de decisão
-
-Impacto: Insights instantâneos para equipes de produto e negócio
-
-Visual
-
-Cards escuros
-
-Tags técnicas
-
-Divisórias inspiradas em código
-
-👤 TELA: ABOUT
-Conteúdo
-
-Texto profissional, direto e confiante
-
-Foco em:
-
-Experiência
-
-Filosofia de trabalho
-
-Forma de pensar sistemas e produtos
-
-Exemplo de tom:
-
-“I’m a developer focused on building systems that scale, perform and last. I work at the intersection of engineering, product and design, turning complex problems into reliable digital solutions.”
-
-Estrutura
-
-Texto principal
-
-Lista curta de skills
-
-Stack favorita
-
-Experiência em produtos digitais
-
-🎨 TELA: STYLEGUIDE
-Deve conter
-
-Paleta de cores (fundo, texto, destaque)
-
-Tipografia (heading, body, mono)
-
-Botões
-
-Cards
-
-Labels técnicos
-
-Exemplo de componentes reutilizáveis
-
-Visual
-
-Bem organizada
-
-Parece documentação interna de produto
-
-Estilo “design system técnico”
-
-⚠️ RESTRIÇÕES IMPORTANTES
-
-Não usar ilustrações genéricas
-
-Não usar imagens stock
-
-Não parecer site de agência ou designer
-
-Visual deve parecer produto real em produção
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The app is available at the local URL shown by Vite, typically `http://localhost:8080`.
+
+### Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Run the linter with:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+src/
+  assets/       Images and other imported assets
+  components/   Shared layout and UI components
+  hooks/        Reusable React hooks
+  lib/          Shared utilities
+  pages/        Route-level page components
+  App.tsx       Application routes and providers
+  main.tsx      Application entry point
+```
+
+## Contact
+
+- LinkedIn: [Punam Agrawal](https://www.linkedin.com/in/punam-agrawal-257263258/)
+- GitHub: [punam2005](https://github.com/punam2005)
