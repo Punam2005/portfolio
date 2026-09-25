@@ -70,6 +70,28 @@ const projectsData: Record<string, {
       "JWT-secured REST API",
       "Cloud sync and monthly insight charts"
     ]
+  },
+  "ai-resume-builder": {
+    name: "AI-Powered Resume Builder & Skill Gap Analyzer",
+    description: "AI-powered resume platform for parsing skills, detecting gaps, and generating ATS-optimized PDFs.",
+    fullDescription: "Architected a full-stack web application with a React.js frontend and a Node.js/Express.js backend. Gemini API integrations power the resume workflow, from structured skill extraction to role-specific gap analysis and ATS-optimized resume generation.",
+    stack: ["React.js", "Node.js", "Express.js", "JWT", "Gemini API", "Puppeteer"],
+    impact: "AI-powered resume generation and skill-gap analysis pipeline",
+    challenges: [
+      "Designing a scalable React.js and Node.js/Express.js full-stack architecture",
+      "Securing authentication with JWT token blacklisting for reliable logout and session invalidation",
+      "Parsing uploaded resumes into structured skill data",
+      "Comparing extracted skills against target roles to detect actionable gaps",
+      "Rendering polished ATS-optimized PDF resumes dynamically with Puppeteer"
+    ],
+    features: [
+      "Gemini API-powered resume workflow",
+      "Resume parsing and structured skill extraction",
+      "AI-based skill gap detection for target roles",
+      "JWT authentication with token blacklisting",
+      "Dynamic ATS-optimized PDF resume generation",
+      "Production-style conventions for maintainability and scale"
+    ]
   }
 };
 

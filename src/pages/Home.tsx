@@ -29,6 +29,13 @@ const featuredProjects = [
     stack: ["React Native", "Node.js", "Express.js", "MongoDB"],
     impact: "40% improvement in tracking efficiency",
   },
+  {
+    name: "AI-Powered Resume Builder & Skill Gap Analyzer",
+    slug: "ai-resume-builder",
+    description: "AI resume platform for parsing skills, identifying role gaps, and generating ATS-optimized PDF resumes.",
+    stack: ["React.js", "Node.js", "Express.js", "JWT", "Gemini API", "Puppeteer"],
+    impact: "AI-powered resume generation and skill-gap analysis pipeline",
+  },
 ];
 
 export default function Home() {
